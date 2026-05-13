@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { background-color: #0a0a0f; color: #e8e6f0; font-family: 'Instrument Sans', sans-serif; min-height: 100vh; }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2a2a3d; border-radius: 4px; }
+}
+
+@layer components {
+  .drag-over { background: rgba(74,158,255,0.05) !important; border-radius: 8px; }
+  .priority-high   { border-left: 3px solid #ef4444 !important; }
+  .priority-medium { border-left: 3px solid #f5c842 !important; }
+  .priority-low    { border-left: 3px solid #4a4860 !important; }
+  .form-field {
+    @apply w-full bg-s2 border border-bdr rounded-lg text-txt font-sans text-sm px-3 py-2.5
+           outline-none transition-colors duration-150 focus:border-blue placeholder:text-txt3;
+  }
+  .btn-primary {
+    @apply bg-blue text-white font-semibold text-sm px-4 h-10 rounded-lg
+           flex items-center gap-1.5 transition-opacity hover:opacity-85
+           disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer border-0;
+  }
+  .btn-ghost {
+    @apply bg-s2 border border-bdr text-txt2 font-semibold text-sm px-4 h-10 rounded-lg
+           flex items-center gap-1.5 transition-all hover:text-txt hover:border-bdr2 cursor-pointer;
+  }
+  .btn-danger {
+    @apply font-semibold text-sm px-4 h-10 rounded-lg flex items-center gap-1.5
+           bg-red/10 border border-red/20 text-red hover:bg-red/20 cursor-pointer transition-all;
+  }
+}
