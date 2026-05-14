@@ -46,7 +46,10 @@ export function BoardColumn({ col, cards, onAddCard, onEditCard, onDeleteCard }:
         <SortableContext items={cards.map(c => c.id)} strategy={verticalListSortingStrategy}>
           {cards.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-10 text-center">
-              <span className="text-3xl mb-2 opacity-30">{col.emoji}</span>
+              <span
+                 className="w-8 h-8 rounded-full mb-3 opacity-20"
+                 style={{ background: col.color }}
+              />
               <p className="text-[12px] text-txt3 leading-relaxed">
                 Arraste cards aqui<br />ou clique no +
               </p>
