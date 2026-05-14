@@ -1,8 +1,9 @@
-# 🗂️ Vaga Tracker
+# Vaga Tracker
 
-Gerencie suas candidaturas de emprego com um Kanban visual. Arraste cards entre etapas e nunca perca o controle do seu processo seletivo.
+Gerencie suas candidaturas de emprego com um Kanban visual.
+Arraste cards entre etapas e nunca perca o controle do seu processo seletivo.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Kanban com 5 colunas: Quero Aplicar → Aplicado → Em Processo → Oferta → Encerrado
 - Drag and drop entre colunas e dentro da mesma coluna
@@ -11,21 +12,26 @@ Gerencie suas candidaturas de emprego com um Kanban visual. Arraste cards entre 
 - Métricas de funil no header
 - Persistência via localStorage — sem cadastro ou backend
 
-## 🚀 Como rodar
+## Como rodar
 
 ```bash
-git clone https://github.com/seu-usuario/vaga-tracker
+git clone https://github.com/vinimachado81/vaga-tracker
 cd vaga-tracker
 npm install
 npm run dev
 ```
 
-## 🛠️ Stack
+## Stack
 
 React 18 · TypeScript · Tailwind CSS · @dnd-kit · Lucide React · Vite
 
-## 💡 Motivação
+## Motivação
 
-Construí essa ferramenta para gerenciar minhas próprias candidaturas enquanto buscava meu primeiro emprego em tecnologia. O problema era real — dezenas de vagas espalhadas em planilhas sem contexto visual. Esse projeto resolve isso.
+Construí essa ferramenta para gerenciar minhas próprias candidaturas
+enquanto buscava meu primeiro emprego em tecnologia. O problema era real
+— dezenas de vagas espalhadas em planilhas sem contexto visual.
+Esse projeto resolve isso.
 
-## 📄 Licença MIT
+## Licença
+
+MIT
